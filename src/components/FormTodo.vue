@@ -52,7 +52,6 @@
           this.description = '';
           this.image = {};
         }
-        
       },
       saveImageForRead(event) {
         
@@ -63,6 +62,7 @@
           this.image.imageName = event.target.files[0].name;
           this.image.imageType = event.target.files[0].type;
           this.image.imageSize = event.target.files[0].size;
+          event.target.value=null;
         };
 
       }
